@@ -1,0 +1,242 @@
+body {
+  color: #414141;
+background-color: #EEEEEE;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.synopsis {
+  color: #7E8184;        /* Light gray */
+  font-style: italic;
+}
+.synopsis em {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+ border-right: 1px solid #bbb;
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+h1, p {
+  background-color: #DDE0E3;    /* Light gray */
+}
+
+em, strong {
+  background-color: #B2D6FF;    /* Light blue */
+}
+
+h1 {
+  padding: 50px;
+border: 1px solid #5D6063;
+}
+p {
+  padding: 20px 0 20px 10px;
+	margin-top: 25px;
+  margin-bottom: 50px;
+}
+strong {
+  margin: 50px;
+}
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+  width: 200px;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+body {
+  text-align: center;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+a:visited:hover {
+  color: orange;
+}
+a:visited:active {
+  color: red;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  
+  width: 100%;
+  padding: 0px;
+  background: #D6E9FE;
+}
+.menu {
+  margin-top: 0px;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 0px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+.dropdown:hover .features-menu {
+  display: flex;
+  flex-direction: column;
+  background: #B2D6FF;
+  border-radius: 0px;
+  padding-top:0px;
+	
+	position: relative;      /* Add these */
+  top: -25px;
+  left: -30px;
+}
+
+.features-menu li {
+  list-style: none;
+  border-bottom: 1px solid #FFF;
+
+  padding: 0 10px 10px 10px;
+  margin: 10px;
+	z-index: 1;
+}
+
+.features-menu li:last-of-type {
+  border-bottom: none;
+}
+.dropdown > span {
+  z-index: 2;
+  position: relative;  /* This is important! */
+  cursor: pointer;
+}
+.features-menu {                    /* Add this as a new rule */
+  display: none;
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 4px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 0px 0px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.totalflex {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+	background-color:white ;
+}
+
+.flexbox{
+	width: 6dp;
+	height: 5dp;
+	background-color:#DDE0E3;
+	color: black;
+}
+p{
+	font-size: 1.5dp;
+}
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
